@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.game {
+  font-size: 30px;
+  height: 100vh;
+  background-color: rgb(103, 175, 235);
+}
+
+.game-board {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+}
+
+.game ol,
+.game ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  font-family: "Be Vietnam Pro", sans-serif;
+  margin-bottom: 50px;
+  text-transform: capitalize;
+  color: rgb(14, 72, 160);
+  font-weight: 500;
+}
+
+.restart {
+  font-family: "Be Vietnam Pro", sans-serif;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-top: 50px;
+  padding: 15px 40px;
+  color: white;
+  border: 2px solid rgb(77, 42, 204);
+  background-color: rgb(77, 42, 204);
+}
+
+.restart:hover {
+  background-color: #0000;
+  border: 2px solid rgb(77, 42, 204);
+  color: rgb(77, 42, 204);
+}
+
+.square {
+  background-color: rgb(203, 232, 255);
+  border: 2px solid rgb(103, 175, 235);
+  /* border: none; */
+  color: rgb(14, 0, 65);
+  float: left;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 100px;
+  margin-right: -1px;
+  font-weight: 500;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+}
+
+.square:focus {
+  outline: none;
+  background-color: rgb(167, 212, 250);
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+  min-width: 190px;
+}
